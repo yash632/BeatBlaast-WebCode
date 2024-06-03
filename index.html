@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>BeatBlast- Web Player: Music for everyone</title>
+   <link href="style.css" rel="stylesheet">
+   <link href="utilityClasses.css" rel="stylesheet">
+   <link href="respo.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="bg">
+         <nav>
+            <div><img src="logo.png" alt="logo" id="logo"></div>
+            <div><button class="log_btn">Log-in</button><button class="btn">Sign-up</button><button
+                  class="back_btn none">Back</button></div>
+         </nav>
+         <div class="para">
+            <div id="para1">Unlimited music, playlists, and podcasts at your fingertips.</div>
+            <div id="para2">Listen anywhere, anytime.</div>
+
+         </div>
+      </div>
+      <!-- background div -->
+      <div class="filter"></div>
+      <div class="flogoprt">
+         <img src="logo_footer.jpg" alt="logo of footer" id="flogo">
+         <div class="filter2"><!--filter--></div>
+
+      </div>
+
+
+      <div class="cont_flex">
+         <video class="v1 vicont" src="v1.mp4" autoplay muted loop></video>
+         <div class="cont">
+            <h2>Enjoy your music anywhere.</h2>
+            <p>Stream unlimited songs, albums, and playlists on your mobile device.</p>
+         </div>
+
+      </div>
+
+      <div class="cont_flex">
+
+
+         <div class="cont">
+            <h2>Listen on the go.</h2>
+            <p>Take your favorite tunes with you on your phone or tablet, anytime, anywhere.</p>
+         </div>
+
+         <img src="img1.jpg" alt="img" class="i1 vicont">
+
+      </div>
+   </div>
+   <!-- main div -->
+
+      <form action="submit_registration" method="POST" id="formSign" class="none">
+      <div class="reg">
+         <div class="sign_filter"></div>
+         <h1>WELCOME TO BEATBLAST</h1>
+         <h2>YOUR OWN MUSIC PLAYER</h2><input type="text" id="fullName" name="fullName" required
+            placeholder="Full Name""><input type=" tel" id="mobileNo" name="mobileNo" pattern="[0-9]{10}" required
+            placeholder="Mobile Number""><input type=" email" id="email" name="email" required
+            placeholder="Email"><input type="password" id="newPassword" name="newPassword" required
+            placeholder="New Password">
+         <input type="password" id="reenterPassword" name="reenterPassword" required
+            placeholder="Re-enter New Password">
+         <h4 class="signFail snone">ERROR! User May be Already Exists</h4>
+         <input id="submit" type="submit" value="Sign-Up">
+      </div>
+   </form>
+
+<form action="submit_login" method="POST" id="formLog" class="none">
+      <div class="reg">
+         <div class="sign_filter"></div>
+         <h1>WELCOME TO BEATBLAST</h1>
+         <h2>YOUR OWN MUSIC PLAYER</h2><input type=" email" id="logEmail" name="email" required
+            placeholder="Enter your Email">
+         <input type="password" id="logPassword" name="logPassword" required
+            placeholder="Enter your Password">
+         <h4 class="logFail snone">Please Enter Correct Email or Password</h4>
+         <input id="submit" type="submit" value="Log in">
+      </div>
+   </form>
+   
+   <!--Music page-->
+   <div class="ababout abnone">
+      <img src="back.svg" class="back" alt="back">
+      <header>
+         <h1>About Our Website</h1>
+         <p>Welcome to BeatBlast, your ultimate destination for music exploration and enjoyment. Our mission is to bring
+            the world of music closer to you, offering a seamless and immersive experience that resonates with every
+            beat.</p>
+         <p>"If you have any suggestions regarding the user interface or any song tracks, feel free to reach out to me
+            on <a href="https://www.instagram.com/_yash__21_?igsh=MTRtNzhlNXRqM3M0NQ==">Instagram by Clicking This</a>."
+         </p>
+
+
+      </header>
+      <main>
+         <section>
+            <h2>Our Mission</h2>
+            <p>At BeatBlast, we are passionate about music. Our mission is to curate a diverse collection of tracks,
+               albums, and playlists that cater to every musical taste. Whether you're a casual listener or an avid
+               music enthusiast, we strive to provide a platform where you can discover, connect, and enjoy your
+               favorite tunes.</p>
+         </section>
+         <section>
+            <h2>Our Vision</h2>
+            <p>Our vision is to redefine the way people experience music online. We envision a future where music is not
+               just heard but felt, where technology enhances the emotional connection between listeners and artists.
+               With innovative features and a user-centric approach, we aim to create a harmonious environment where
+               music transcends boundaries and brings people together.</p>
+         </section>
+         <section>
+            <h2>Meet the Developer</h2>
+            <p>I'm <span class="strong">Yash Rathore</span>, the developer of BeatBlast. Combining my love for coding
+               and music, I set out to create a platform that merges cutting-edge technology with the soulful magic of
+               music. Designer <span class="strong">Parv Baldua</span>, my partner in this musical adventure, adds an
+               awesome appearance to our platform."</p>
+
+         </section>
+      </main>
+      <footer>
+         <p>Copyright &copy; 2024 BeatBlast.<br>All rights reserved.</p>
+      </footer>
+   </div>
+   <div class="scontainer snone">
+      <div class="left">
+         <img src="cut.svg" class="cut" alt="cut">
+         <div class="home">
+            <ul type="none">
+               <li><img src="logo.png" class="slogo1"> <img src="logo_footer.jpg" class="slogo1"></li>
+               <li class="none"></li>
+               <div class="info_data none data_text"></div>
+               <li class="home_list home_tab"><img src="homepage.png" class="invert home_img">Home</li>
+               <li class="home_list search_tab"><img src="search.png" class="invert home_img">Search</li>
+               <li class="home_list infotab"><img src="info.svg" class="info home_img">Info</li>
+               <li class="home_list review"><img src="review.svg" class="home_img">Review</li>
+               <li class="home_list logOut"><img src="logout.svg" class="home_img">Log Out</li>
+               <li class="about home_list"><img src="about.png" class="home_img">About Us</li>
+
+            </ul>
+
+         </div>
+         <div class="library">
+            <div class="your_library">
+               <img class="playlist" src="playlist.svg">Your Library
+            </div>
+            <div class="lib_cont">
+               <ol style="list-style-type: none;" id="gaane">
+                  <li>First Select any Album</li>
+
+                  <!--li will be append by js-->
+               </ol>
+            </div>
+         </div>
+      </div><!--left-->
+
+
+      <div class="right">
+         <div class="searchListCont searchNone">
+
+            <div class="searchPannelPosition">
+               <div class="searchPannel ">
+                  <img src="back.svg" alt="back" class="searchBack"><input type="text" id="searchInput"
+                     placeholder="Search for a song...">
+                  <!-- <button id="searchButton">Search</button> -->
+                  <img src="search.svg" alt="search" id="searchButton">
+               </div>
+            </div>
+            <ul id="searchGaane">
+            </ul>
+         </div>
+              <div class="reviewCont searchNone">
+         <div class="reviewContStyle">
+           <div class="review_head">
+             <div><img src="back.svg" alt="back" class="reviewBack"></div>
+             <div class="review_head_text"><h1>REVIEWS</h1></div>
+           </div>
+
+           <div class="reviewContainer">
+             <ul class="reviewData">
+             </ul>
+           </div>
+
+           <div class="reviewPannelPosition">
+             <div class = "reviewPannel">
+               <form action="submit_review" method="POST" id="reviewForm">
+                 <input type="text" id="reviewInput" name="reviewInput" placeholder="Your Review is Valuable for Us...">
+                 <input type="submit" value="Submit Review" id="reviewSubmit">
+                  <h4 class="reviewSuccess snone">Review Submitted Successfully </h4>
+               </form>
+             </div>
+           </div>
+         </div>        </div>
+
+         <div class="right_head">
+            <div>
+               <h1>ALBUMS</h1>
+            </div>
+            <img src="hamburger.svg" alt="hemburger" class="hamburger">
+         </div>
+
+         <div class="right_cont">
+            <!--cardContainer-->
+            <div class="card_container">
+               <div class="card">
+                  <div id="card_img1"></div>
+                  <h3>Divine Chants</h3>
+                  <p>Embark on a celestial journey with these divine chants, resonating with timeless wisdom and
+                     spiritual essence.</p>
+               </div>
+               <!--2nd card-->
+               <div class="card">
+                  <div id="card_img2"></div>
+                  <h3>Top Hits</h3>
+                  <p>Experience the chart-toppers that define the heartbeat of today's music scene.</p>
+               </div>
+               <!--3rd card-->
+               <div class="card">
+                  <div id="card_img3"></div>
+                  <h3>Warrior's Valor</h3>
+                  <p>Embark on a journey through the valorous tales of warriors, where courage meets destiny in every
+                     beat.</p>
+               </div>
+               <!--4th card-->
+               <div class="card">
+                  <div id="card_img4"></div>
+                  <h3>Trending Song</h3>
+                  <p>Experience the pulse of the music world with our trending song album</p>
+               </div>
+               <!--5th card-->
+               <div class="card">
+                  <div id="card_img5"></div>
+                  <h3>Old is Gold</h3>
+                  <p>Revisit musical treasures with 'Old is Gold,' an album celebrating timeless classics.</p>
+               </div>
+
+            </div>
+         </div>
+
+
+         <div class="control_details">
+            <center>
+               <div class="songName"></div>
+            </center>
+            <div class="control_box">
+               <div class="t1">00:00</div>
+               <div class="t2">00:00</div>
+               <div class="seek_div">
+                  <div class="seek_bar">
+                     <div class="seeker"></div>
+                     <!--seekBar-->
+                  </div>
+               </div>
+               <div class="controller">
+                  <img src="previous.svg" alt="previous" class="pre cele">
+                  <img src="pause.svg" alt="play" class="pause cele"><img src="play.svg" class="play none cele">
+                  <img src="next.svg" alt="next" class="next cele">
+
+               </div>
+
+            </div>
+         </div><!--control_details-->
+
+      </div><!--right-->
+
+   </div><!--scontainer-->
+
+   <script src="script.js"></script>
+   <script src="fatch.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+@media (max-width: 600px) {
+  .bg {
+    min-height: 40vh;
+  }
+
+  .filter {
+    min-height: 40vh;
+  }
+
+  .btn,
+  .back_btn,
+  .log_btn {
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .hamburger {
+    display: inline;
+  }
+
+  .left {
+    position: absolute;
+    left: -110vw;
+    width: 34vw;
+    /* width: 64vw; */
+    z-index: 1;
+    transition: all 0.4s;
+  }
+
+  .home ul li img {
+    width: 13px;
+  }
+
+  .home ul li {
+    font-size: 13px;
+  }
+
+  /*
+  .reg input{
+    height:35px;
+  }*/
+  .data_text {
+    font-size: 10px;
+  }
+
+  .cut {
+    display: block;
+  }
+
+  .right {
+    width: 97vw;
+  }
+
+  .t1 {
+    left: 5vw;
+  }
+
+  .t2 {
+    right: 5vw;
+  }
+
+  .control_details {
+    width: 97vw;
+  }
+
+  .searchPannel {
+    width: 95%;
+    left: 2%;
+  }
+  /* #reviewSubmit {
+    width: 60VW;
+}
+  #reviewInput {
+    width: 59VW;
+  } */
+  .reviewContStyle {
+    max-width: 97VW;
+  }
+  #reviewForm {
+     max-width: 97VW;
+  }
+  .reviewPannelPosition {
+    /* max-width: 97VW; */
+  }
+  .reviewPannel{
+    width: 96vw;
+  }
+}
+
+/*media query*/
+
+.flex {
+  display: flex;
+}
+
+.justify {
+  justify-content: center;
+
+}
+
+.align {
+  align-items: center;
+}
+
+.m1 {
+  margin: 100px;
+}
+
+.p1 {
+  padding: 10px;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
